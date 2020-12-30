@@ -1,10 +1,10 @@
 
 
 ## Trigger Lambda function thru Alexa 
-- Designed to allow developers to create three or more functions, using some simple endpoints I already had in Postman for Walmart, Swiggy, Amazon & a parent function which will communicate with Alexa and will call/invoke the approperiate nested lambda functions
+Designed to allow developers to create three or more functions, using some simple endpoints I already had in Postman for Walmart, Swiggy, Amazon & a parent function which will communicate with Alexa and will call/invoke the approperiate nested lambda functions
 
 ## Alexa skill model building
-- Use the models/en-US.json file for model building
+Use the models/en-US.json file for model building
   
 ## Invoke another lambda function
 - Create policy and provide necessary access for those lambda function. FOr example,
