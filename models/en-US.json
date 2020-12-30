@@ -1,0 +1,71 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "invoke lambda skill",
+            "modelConfiguration": {
+                "fallbackIntentSensitivity": {
+                    "level": "LOW"
+                }
+            },
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "InvokeLambdaIntent",
+                    "slots": [
+                        {
+                            "name": "lambdaname",
+                            "type": "LambdaName"
+                        }
+                    ],
+                    "samples": [
+                        "are you able to start the {lambdaname} function ",
+                        "please start the function {lambdaname} to buy products",                        
+                        "can you please start the {lambdaname} function ",
+                        "could you please start the {lambdaname} function "
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "LambdaName",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "walmart"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "swiggy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "amazon"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
