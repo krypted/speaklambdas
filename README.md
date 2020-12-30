@@ -8,7 +8,7 @@
   
 ## Invoke another lambda function
 - Create policy and provide necessary access for those lambda function. FOr example,
-    {
+```    {
         "Effect": "Allow",
         "Action": [            
             "lambda:*"
@@ -20,6 +20,8 @@
 
         ]
     }
+```
+
 - Attach this policy with the parent function in order to invoke the child functions
 
 
